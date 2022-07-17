@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SignInFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In Page:"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:typeface="monospace"
+        android:textColor="@android:color/holo_blue_light"
+        android:id="@+id/signInTV"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/signInEmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInTV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter your email here"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/signInPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInEmailET"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter your password here"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/signInBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInPasswordET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/progressBarSignIp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

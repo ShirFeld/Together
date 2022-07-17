@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SignUpFragment">
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Email:"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTV"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your email here"
+        android:inputType="textEmailAddress"
+        android:maxLength="40"
+        android:minHeight="48dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailET"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Password:"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTV"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your password here"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:text="Create User"
+        android:textColor="#4E342E"
+        android:textSize="13sp" />
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/progressBarSignUp"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
